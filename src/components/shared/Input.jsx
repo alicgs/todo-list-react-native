@@ -1,5 +1,5 @@
 import { Text, View, TextInput, TouchableOpacity } from "react-native";
-import React, { useState } from "react";
+import React, { useState } from "react";  
 import { useSelector, useDispatch } from 'react-redux'
 import { setUserValidationInput } from '../../redux/userSlice' 
 
