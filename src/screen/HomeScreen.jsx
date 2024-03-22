@@ -1,10 +1,13 @@
-import { Text, View } from "react-native";
 import React from "react";
+import {SafeAreaView} from 'react-native-safe-area-context';
+import Header from "../components/home/Header";
+import List from "../components/home/List";
 
 export default function HomeScreen() {
   return (
-    <View className="flex-1 bg-red-600 py-20">
-      <Text className="text-[37px]">HomeScreenss</Text>
-    </View>
+   <SafeAreaView className="flex-1">
+    <Header/>
+    <List/>
+   </SafeAreaView>
   );
 }

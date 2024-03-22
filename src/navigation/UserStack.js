@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 export default function UserStack()  {
   return (
    <NavigationContainer>
-     <Tab.Navigator screenOptions={{headerShown: false}}>
+     <Tab.Navigator screenOptions={{headerShown: false, tabBarShowLabel: false}}>
       <Tab.Screen name="Home" component={HomeScreen} 
          options={{
           tabBarLabel: ({focused}) => (
@@ -60,7 +60,7 @@ export default function UserStack()  {
           
           ),
           tabBarIcon: () => (
-            <Ionicons name="add-circle-outline" size={24} color="#3B5BDD" />
+            <Ionicons name="add-circle-outline" size={32} color="#3B5BDD" />
           ),
         }}
        />
