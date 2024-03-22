@@ -3,10 +3,17 @@ import React from "react";
 import Input from "../shared/Input";
 import Button from "../shared/Button";
 import { loginForm } from "../../utils/const/authForm.js";
+import { setLoader } from "../../redux/generalSlice";
+import { useDispatch } from "react-redux";
 
 export default function Login({ navigation }) {
+    const dispatch = useDispatch();
+    
+    const changePage = () => {
+      dispatch(setLoader());
+      navigation.navigate("Register");
+    }
 
- 
   return (
     <View className="flex-auto items-center justify-center px-5 bg-white pt-[170px]">
       <View>
@@ -28,9 +35,9 @@ export default function Login({ navigation }) {
       />
       </View>
 
-      <View className="w-full mt-5">
+      <TouchableOpacity onPress={changePage} className="w-full mt-5">
         <Button title={"Login"} />
-      </View>
+      </TouchableOpacity>
 
       <View className="w-full mt-5 flex-row mb-[270px]">
         <Text className="text-primary">Don't have an account yet?</Text>
