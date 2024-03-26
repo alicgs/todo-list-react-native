@@ -20,7 +20,7 @@ export default function HomeScreen() {
       </ScrollView>
 
       <Modal
-        animationType="none"
+        animationType="fade"
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
