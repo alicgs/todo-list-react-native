@@ -5,12 +5,6 @@ import Button from "../shared/Button";
 import { registerForm } from "../../utils/const/authForm.js";
 
 export default function Login({ navigation }) {
-
-
-
-
-
-
   return (
     <View className="flex-auto items-center justify-center px-5 bg-white pt-[100px]">
       <View>
